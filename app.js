@@ -11,8 +11,13 @@ const App = ((() => {
   const childProcess = require('child_process')
   const glob = require('glob')
   const path = require('path')
+  const nanoid = require('nanoid')
   let themes = ''
   let program = blessed.program()
+
+  let id = nanoid.nanoid(Number(process.argv[2]));
+
+  console.log(id)
 
   const files = glob.sync(path.join(__dirname, 'themes', '*.json'))
   for (var i = 0; i < files.length; i++) {
