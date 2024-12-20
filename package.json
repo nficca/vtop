@@ -31,6 +31,7 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
+    "nanoid": "3.3.0",
     "blessed": "0.1.81",
     "commander": "2.11.0",
     "drawille": "1.1.0",
